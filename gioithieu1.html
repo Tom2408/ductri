@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuGongCha</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .logo{
+            margin-right: 90px;
+        }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 1000px;
+  }
+  .diachi{
+            background-color: rgb(241, 239, 239);
+            float: right;
+            list-style-type: none;
+            padding-top: 100px;
+            font-size: 20px;
+            width: 492px;
+            height: 500px;
+        }
+        #button{
+          font-size: 20px;
+        }
+        .img1{
+          float:left;
+          clear:left;
+        }
+        .img2{
+          float:left;
+          clear:right;
+        }
+        .uudai{
+            padding-top: 20px;
+            list-style-type: none;
+            background: #e90382;
+            border: #333 0px solid;
+            width: 450px;
+            height: 400px;
+            float: left;
+            clear: left;
+            
+        }
+        .title1{
+            background: #ffffffad;
+            font-size: 30px;
+            color:#ad0f0f;
+            border: #333 1px solid;
+            width: 520px;
+            height: 100px;
+            float: left;
+            clear: right;
+            text-align: center;
+            padding-top: 15px;
+            
+        }
+        #uudai1{
+          color:red
+        }
+        .title2{
+            background: #f5c3c3ad;
+            color:#333;
+            border: #333 1px solid;
+            width: 1500px;
+            height: 450px;
+            float: left;
+            clear: right;
+            padding-top: 50px;
+            
+        }
+        .end{
+          background: #524848ad;
+          color: #ffffff;
+          font-size: 12px;
+          border: #524848ad 1px solid;
+          width: 400px;
+          height: 150px;
+          float: left;
+          clear: right;
+          padding-top: 50px;
+          padding-left: 160px;
+        }
+        #u{
+          color: #ad0f0f;
+          list-style-type: none;
+        }
+        #u1{
+          color: #ad0f0f;
+          background-color:#f5c3c3ad ;
+        }
+        #r{
+          background-color: #f5c3c3ad;
+        }
+        #t{
+          list-style-type: none;
+        }
+        .breadcrumb{
+          padding-top: 40px;
+          color:#333;
+          font-size: 20px;
+        }
+        .y{
+            text-align: center;
+        }
+        .o{
+            background: #f8c4c4ad;
+          color: #363333;
+          font-size: 12px;
+          width: 730px;
+          height: 560px;
+          float: left;
+          clear: right;
+          padding-top: 100px;
+        }
+        .o1{
+            background: #f8c4c4ad;
+          color: #363333;
+          font-size: 12px;
+          width: 730px;
+          height: 560px;
+          float: left;
+          clear: right;
+          padding-top: 200px;
+          padding-left: 200px;
+        }
+        #o2{
+            color: #fa1111ad;
+        }
+        .o2{
+            background: #ffffff;
+          color: #363333;
+          font-size: 12px;
+          width: 730px;
+          height: 560px;
+          float: left;
+          clear: right;
+          padding-top: 100px;
+          padding-left: 40px;
+          
+        }
+        .o3{
+            background: #ffffff;
+          color: #363333;
+          font-size: 12px;
+          width: 730px;
+          height: 560px;
+          float: left;
+          clear: right;
+          padding-top: 200px;
+          padding-left: 40px;
+        }
+        .o5{
+            background: #f8c4c4ad;
+          color: #363333;
+          font-size: 12px;
+          width: 1460px;
+          height: 560px;
+        } 
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="https://gongcha.com.vn/wp-content/uploads/2018/03/Untitled-4.png" alt="logo" style="width:50px;">
+        </a>
+        
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><strong>TRANG CHỦ</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><strong>GIỚI THIỆU</strong></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <strong>THỰC ĐƠN</strong>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Món mới</a>
+              <a class="dropdown-item" href="#">Thức uống theo mùa</a>
+              <a class="dropdown-item" href="#">Menu hiện tại</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <strong>THÀNH VIÊN</strong>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Chính Sách Thành Viên</a>
+              <a class="dropdown-item" href="#">Chính Sách Bảo Mật Thông Tin</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><strong>TIN TỨC & ƯU ĐÃI</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><strong>CỬA HÀNG</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><strong>TUYỂN DỤNG</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><strong>LIÊN HỆ</strong></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <img  src="https://gongcha.com.vn/wp-content/plugins/qtranslate-xt-master/flags/vn.png" alt="logo" style="width:20px;">
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">
+                <img  src="https://gongcha.com.vn/wp-content/plugins/qtranslate-xt-master/flags/vn.png" alt="logo" style="width:20px;">
+                Tiếng Việt
+              </a>
+              <a class="dropdown-item" href="#">
+                <img  src="https://gongcha.com.vn/wp-content/plugins/qtranslate-xt-master/flags/gb.png" alt="logo" style="width:20px;">
+                English
+              </a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.facebook.com/Vietnam.GongCha">
+                <img  src="https://th.bing.com/th/id/OIP.W3-B63rZPyxGBuMkFKiWmAAAAA?rs=1&pid=ImgDetMain" alt="logo" style="width:20px;">
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.instagram.com/gongchavietnam/">
+                <img  src="https://th.bing.com/th/id/R.938790b17acb5b3b8236d65ce8c4fc45?rik=ZsKCmaRq9V1Rxg&pid=ImgRaw&r=0" alt="logo" style="width:20px;">
+            </a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <img  src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png" alt="logo" style="width:20px;">
+            </a>
+            <div class="dropdown-menu">
+                <div class="droptown-item">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                      <button class="btn btn-basic" type="submit">
+                        <img  src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png" alt="logo" style="width:20px;">
+                      </button>  
+                     </div>
+                  </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+    </nav>
+        <div class="y" >
+            <h3>Giới Thiệu</h3>
+            <p>Good Tea - Great Taste</p>
+          </div>
+          <div class="o">
+            <h2 id="o2">CÂU CHUYỆN THƯƠNG HIỆU</h2>
+            <h4>Tên gọi Gong Cha xuất phát từ ý nghĩa trong tiếng Hoa là Trà cung đình. Thời xưa, các loại trà tốt nhất thường được các vị hoàng thân quý tộc ngự dùng. Ngày nay, Gong Cha mong muốn phục vụ các loại trà tốt nhất cho thực khách, cũng như chính tên gọi của thương hiệu. Kể từ khi được thành lập vào năm 2006 tại Đài Loan, chuỗi cửa hàng Gong Cha đã mở rộng trên khắp 19 quốc gia với 1.500 cửa hàng và con số này vẫn tiếp tục tăng trưởng không ngừng. Qua nhiều năm nỗ lực phát triển, Gong Cha đã trở nên phổ biến với khách hàng từ nhiều quốc gia và trở thành một trong những thương hiệu trà đáng tin cậy hàng đầu trên thế giới.</h4>
+          </div>
+          <div class="o1">
+            <img  src="https://gongcha.com.vn/wp-content/uploads/2018/02/lytra-350x441.png" alt="logo" style="width:200px;">
+          </div>
+          <div class="o2">
+            <img  src="https://gongcha.com.vn/wp-content/uploads/2018/03/H%C3%ACnh-CH-1400x933.jpg" alt="logo" style="width:600px;"> 
+          </div>
+          <div class="o3">
+            <h2>GONG CHA VIỆT NAM</h2>
+            <h4>Thương hiệu Gong Cha được công ty TNHH Golden Trust chính thức đưa vào hoạt động tại thị trường Việt Nam từ ngày 11/10/2014. Trải qua hơn năm năm hoạt động, công ty TNHH Golden Trust – đơn vị nhượng quyền độc quyền của Gong Cha tại Việt Nam, đã đưa thương hiệu phát triển nhanh chóng và trở thành một trong những điểm đến thân thuộc của các bạn trẻ yêu thích văn hóa trà sữa và mong muốn trải nghiệm sản phẩm trà uy tín chất lượng với nguồn gốc xuất xứ rõ ràng.</h4>
+          </div>
+          <h1 style="text-align:center" id="o2"><strong>Giá Trị Cốt Lõi </strong></h1>
+    <div class="o5">
+    <div class="row">
+        <div class="col-xl-4">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="https://gongcha.com.vn/wp-content/uploads/2018/01/icon1.png" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title" id="o2">1. Chất lượng hàng đầu</h4>
+                <a href="#" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo">More</a>
+                <div id="demo" class="collapse multi-collapse">
+                    <p class="card-text">An toàn, vệ sinh và ngon miệng. Việc sử dụng các nguyên liệu an toàn, tự nhiên và vệ sinh là ưu tiên hàng đầu của Gong Cha. Hương vị tuyệt hảo của các món thức uống là mục đích quan trọng tiếp theo mà chúng tôi muốn hướng đến.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="https://gongcha.com.vn/wp-content/uploads/2018/01/icon2.png" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">Read Books</h4>
+                <a href="#" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo1">More</a>
+                <div id="demo1" class="collapse multi-collapse">
+                    <p class="card-text">The most wonderful natural feature I have ever seen.' With these words the explorer William Gosse expressed the awe he and many others have felt at the natural phenomenon of Uluru. The first white person to reach the central Australian monolith, he gave it the name 'Ayers Rock'. But who was Henry Ayers, the man whose name is forever associated with Australia's most recognisable natural icon? And why should he still be remembered today? Although the rock now carries its ancient indigenous name, Uluru, the name of Ayers is still linked with the the Rock's 'discovery' in 1873. Indeed, 'Ayers Rock' is one of the most famous natural wonders on earth and, despite its remote location,</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="https://gongcha.com.vn/wp-content/uploads/2018/01/icon3.png" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">Dance</h>
+                <a href="#" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo2">More</a>
+                <div id="demo2" class="collapse multi-collapse">
+                    <p class="card-text">dance, the movement of the body in a rhythmic way, usually to music and within a given space, for the purpose of expressing an idea or emotion, releasing energy, or simply taking delight in the movement itself.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+    </html>
